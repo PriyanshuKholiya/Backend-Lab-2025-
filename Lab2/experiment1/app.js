@@ -1,2 +1,2 @@
-import { user } from "./myModule";
+import { user } from "./myModule.js";
 console.log(user);

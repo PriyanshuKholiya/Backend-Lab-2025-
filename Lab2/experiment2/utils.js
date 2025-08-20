@@ -1,14 +1,9 @@
-const company = {
-    name: "TechCorp",
-    address: {
-        city: "Delhi",
-        pin: "110001"
-    }
+export const data = {
+  person: {
+    name: "Priyanshu",
+    age: 19
+  },
+  greet: function () {
+    return `Hello, ${this.person.name}!`;
+  }
 };
-
-function getCompanyName() {
-    return company.name;
-}
-
-exports.company = company;
-exports.getCompanyName = getCompanyName;

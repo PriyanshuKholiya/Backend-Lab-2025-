@@ -1,0 +1,9 @@
+1	Write a program that uses a Readable stream to read data from a file (data.txt). Output the file content to the console. Ensure the file exists before reading, and handle any errors if the file is missing.
+
+2	Write a program that creates a Writable stream to write a string ("Hello, Node.js!") to a file (output.txt). If the file already exists, overwrite it. Print a success message once the data is written.
+
+3	Write a program that demonstrates stream piping. Use a Readable stream to read data from a file (input.txt), and pipe it to a Writable stream that writes to another file (output.txt).
+
+4	Write a program that uses process.stdin to read user input from the command line. Ask the user for their name and greet them by printing "Hello, [name]!" to the console.
+
+5	Write a program that demonstrates error handling in streams. Create a Readable stream that tries to read from a non-existent file and handles the error by emitting an error event.
