@@ -1,6 +1,6 @@
-const fs = require('fs');
+import { readFile } from 'fs';
 
-fs.readFile('sample.txt', 'utf8', (err, data) => {
+readFile('sample.txt', 'utf8', (err, data) => {
     if (err) {
         if (err.code === 'ENOENT') {
             console.error('File not found!');
