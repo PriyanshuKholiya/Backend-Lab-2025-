@@ -1,7 +1,6 @@
-// file: errorStream.js
 const fs = require("fs");
 
-const readStream = fs.createReadStream("no_such_file.txt", "utf8");
+const readStream = fs.createReadStream("file.txt");
 
 readStream.on("data", chunk => {
   console.log(chunk);

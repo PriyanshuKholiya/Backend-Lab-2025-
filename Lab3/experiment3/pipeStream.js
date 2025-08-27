@@ -1,4 +1,3 @@
-// file: pipeStream.js
 const fs = require("fs");
 
 const readStream = fs.createReadStream("input.txt");
