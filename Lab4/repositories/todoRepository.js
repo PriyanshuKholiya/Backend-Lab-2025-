@@ -1,4 +1,4 @@
-import Todo, { find, findById, findByIdAndUpdate, findByIdAndDelete } from '../models/todo.js';
+import Todo from '../models/todo.js';
 
 // An object that contains all our database logic for Todos
 const todoRepository = {
@@ -10,24 +10,22 @@ const todoRepository = {
 
   // READ all to-do items
   getAll: async () => {
-    // .sort({ createdAt: -1 }) shows the newest tasks first
-    return await find().sort({ createdAt: -1 });
+    return await Todo.find().sort({ createdAt: -1 });
   },
 
   // READ a single to-do item by its ID
   getById: async (id) => {
-    return await findById(id);
+    return await Todo.findById(id);
   },
 
   // UPDATE a to-do item by its ID
   update: async (id, updateData) => {
-    // { new: true } returns the modified document instead of the original
-    return await findByIdAndUpdate(id, updateData, { new: true });
+    return await Todo.findByIdAndUpdate(id, updateData, { new: true });
   },
 
   // DELETE a to-do item by its ID
   delete: async (id) => {
-    return await findByIdAndDelete(id);
+    return await Todo.findByIdAndDelete(id);
   },
 };
 
